@@ -11,7 +11,9 @@
 </head>
 <body>
     <div class="container pt-5" id="myApp">
-        <img :src="myImage"alt="Logo">
+        <Transition name="fade">
+            <img :src="myImage"alt="Logo">
+        </Transition>
         <br>
 
         <!-- v-bind -->
@@ -32,6 +34,9 @@
                 Contatore: {{ count }}
             </button>
 
+            <button type="button" class="btn btn-dark btn-lg mt-2" @click="changeImage">
+                &quest;&quest;&quest;
+            </button>
         </div>
     </div>
     

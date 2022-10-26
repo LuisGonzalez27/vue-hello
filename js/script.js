@@ -18,6 +18,10 @@ const myApp = createApp({
             },
             colorFirst(){
                 this.myClass = 'green';
+            },
+            changeImage(){
+                this.myImage = './img/logovue.png';
+                this.message = 'I AM VUE !';
             }
         }
 });
